@@ -1101,19 +1101,15 @@ section {
   padding: 0 0 30px 0;
   color: #FFFFFF;
   font-size: 14px;
-  background: #FFFFFF;
+  background: #03045E;
+  height: 340px;
 }
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #03045E;
 }
 
-#footer .footer-top .footer-contact {
-  margin-bottom: 30px;
-}
-
-#footer .footer-top .footer-contact h3 {
+#footer .footer-top h3 {
   font-size: 24px;
   margin: 0 0 15px 0;
   padding: 2px 0 2px 0;
@@ -1123,8 +1119,22 @@ section {
   text-transform: uppercase;
 }
 
-#footer .footer-top .footer-contact h3 span {
-  color: #106eea;
+#footer .footer-top h3 span {
+  color: #00B4D8;
+}
+
+#footer .footer-top .footer-contact {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-contact h4 {
+  color: #FFFFFF;
+  padding: 0;
+}
+
+#footer .footer-top .footer-contact hr {
+  border: 1px solid #FFFFFF;
+  opacity: 0.5;
 }
 
 #footer .footer-top .footer-contact p {
