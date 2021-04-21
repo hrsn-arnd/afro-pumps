@@ -595,6 +595,13 @@ section {
   }
 }
 
+.underline {
+  width: 5%;
+  border: 2px solid red;
+  opacity: 1;
+}
+
+
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -1060,10 +1067,15 @@ section {
 
 .contact .php-email-form input {
   padding: 10px 15px;
+  border: 1px solid #f4f4f4;
+  border-radius: 3px;
 }
 
 .contact .php-email-form textarea {
   padding: 12px 15px;
+  border: 1px solid #f4f4f4;
+  border-radius: 3px;
+  height: 250px;
 }
 
 .contact .php-email-form button[type="submit"] {
