@@ -34,7 +34,7 @@
   }
 
   /**
-   * Easy on scroll event listener 
+   * Easy on scroll event listener
    */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
@@ -245,7 +245,7 @@
   });
 
   /**
-   * Initiate portfolio lightbox 
+   * Initiate portfolio lightbox
    */
   const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'
@@ -279,5 +279,493 @@
       mirror: false
     })
   });
+
+  /**
+   * Owl initializer
+   */
+
+   const productList = [
+       {
+            brand: "John Deere",
+            power: 20,
+            model: "NWJD20"
+        },
+        {
+            brand: "Baudouin",
+            power: 20,
+            model: "MNWB20"
+        },
+        {
+            brand: "Grupel-Grupel",
+            power: 20,
+            model: "NWGRGG20"
+        },
+        {
+            brand: "John Deere",
+            power: 25,
+            model: "NWJD25"
+        },
+        {
+            brand: "Grupel-Grupel",
+            power: 28,
+            model: "NWGRGG28"
+        },
+        {
+            brand: "John Deere",
+            power: 30,
+            model: "NWJD30"
+        },
+        {
+            brand: "Baudouin",
+            power: 30,
+            model: "NWB030"
+        },
+        {
+            brand: "Grupel-Grupel",
+            power: 31,
+            model: "NWGRGG30"
+        },
+        {
+            brand: "Grupel-Grupel",
+            power: 37,
+            model: "NWGRGG30"
+        },
+        {
+            brand: "Baudouin",
+            power: 40,
+            model: "NWB040"
+        },
+        {
+            brand: "John Deere",
+            power: 40,
+            model: "NWJD40"
+        },
+        {
+            brand: "Baudouin",
+            power: 50,
+            model: "NWB050"
+        },
+        {
+            brand: "John Deere",
+            power: 60,
+            model: "NWJD60"
+        },
+        {
+            brand: "Baudouin",
+            power: 60,
+            model: "NWB060"
+        },
+        {
+            brand: "Grupel-Grupel",
+            power: 63,
+            model: "NWGRBD60"
+        },
+        {
+            brand: "John Deere",
+            power: 80,
+            model: "NWJD80"
+        },
+        {
+            brand: "John Deere",
+            power: 80,
+            model: "NWJD80"
+        },
+        {
+            brand: "Baudouin",
+            power: 80,
+            model: "NWB080"
+        },
+        {
+            brand: "Grupel-Grupel",
+            power: 100,
+            model: "NWGRBD100"
+        },
+        {
+            brand: "John Deere",
+            power: 100,
+            model: "NWJD100"
+        },
+        {
+            brand: "Baudouin",
+            power: 100,
+            model: "NWB100"
+        },
+        {
+            brand: "John Deere",
+            power: 125,
+            model: "NWJD125"
+        },
+        {
+            brand: "Baudouin",
+            power: 135,
+            model: "NWB135"
+        },
+        {
+            brand: "John Deere",
+            power: 150,
+            model: "NWJD150"
+        },
+        {
+            brand: "Grupel-Grupel",
+            power: 150,
+            model: "NWGRBD100"
+        },
+        {
+            brand: "Baudouin",
+            power: 150,
+            model: "NWB150"
+        },
+        {
+            brand: "John Deere",
+            power: 200,
+            model: "NWJD200M"
+        },
+        {
+            brand: "Grupel-Grupel",
+            power: 200,
+            model: "NWGRBD100"
+        },
+        {
+            brand: "Baudouin",
+            power: 200,
+            model: "NWB200"
+        },
+        {
+            brand: "Baudouin",
+            power: 250,
+            model: "NWB250"
+        },
+        {
+            brand: "John Deere",
+            power: 250,
+            model: "NWJD250"
+        },
+        {
+            brand: "Volvo",
+            power: 250,
+            model: "NWV250"
+        },
+        {
+            brand: "Baudouin",
+            power: 300,
+            model: "NWB300"
+        },
+        {
+            brand: "John Deere",
+            power: 300,
+            model: "NWJD300"
+        },
+        {
+            brand: "Volvo",
+            power: 300,
+            model: "NWV300"
+        },
+        {
+            brand: "Baudouin",
+            power: 350,
+            model: "NWB350"
+        },
+        {
+            brand: "John Deere",
+            power: 350,
+            model: "NWJD350"
+        },
+        {
+            brand: "Volvo",
+            power: 350,
+            model: "NWV350"
+        },
+        {
+            brand: "Baudouin",
+            power: 400,
+            model: "MWB400"
+        },
+        {
+            brand: "John Deere",
+            power: 400,
+            model: "NWJD400"
+        },
+        {
+            brand: "Volvo",
+            power: 400,
+            model: "NWV400"
+        },
+        {
+            brand: "Baudouin",
+            power: 450,
+            model: "NWB450"
+        },
+        {
+            brand: "John Deere",
+            power: 450,
+            model: "NWJD450"
+        },
+        {
+            brand: "Volvo",
+            power: 450,
+            model: "NWV450"
+        },
+        {
+            brand: "Baudouin",
+            power: 500,
+            model: "NWB500"
+        },
+        {
+            brand: "Volvo",
+            power: 500,
+            model: "NWV500"
+        },
+        {
+            brand: "Baudouin",
+            power: 600,
+            model: "NWB600"
+        },
+        {
+            brand: "Volvo",
+            power: 593,
+            model: "NWV600"
+        },
+        {
+            brand: "Volvo",
+            power: 650,
+            model: "NWV630"
+        },
+        {
+            brand: "Baudouin",
+            power: 650,
+            model: "NWB650"
+        },
+        {
+            brand: "Baudouin",
+            power: 750,
+            model: "NWB750"
+        },
+        {
+            brand: "Baudouin",
+            power: 800,
+            model: "NWB800"
+        },
+        {
+            brand: "Mitsubishi",
+            power: 800,
+            model: "NWMT800"
+        },
+        {
+            brand: "Baudouin",
+            power: 900,
+            model: "NWB900"
+        },
+        {
+            brand: "Baudouin",
+            power: 1000,
+            model: "NWB1000"
+        },
+        {
+            brand: "Mitsubishi",
+            power: 1000,
+            model: "NWMT1000"
+        },
+        {
+            brand: "Baudouin",
+            power: 1250,
+            model: "NWB1250"
+        },
+        {
+            brand: "Mitsubishi",
+            power: 1250,
+            model: "NWMT1250"
+        },
+        {
+            brand: "Baudouin",
+            power: 1500,
+            model: "NWB1500"
+        },
+        {
+            brand: "Mitsubishi",
+            power: 1500,
+            model: "NWMT1500"
+        },
+        {
+            brand: "Mitsubishi",
+            power: 1700,
+            model: "NWMT1700"
+        },
+        {
+            brand: "Baudouin",
+            power: 1750,
+            model: "NWB1750"
+        },
+        {
+            brand: "Mitsubishi",
+            power: 2000,
+            model: "NWMT2000"
+        },
+        {
+            brand: "Baudouin",
+            power: 2000,
+            model: "NWB2000"
+        },
+        {
+            brand: "Mitsubishi",
+            power: 2200,
+            model: "NWMT2200"
+        },
+        {
+            brand: "Baudouin",
+            power: 2200,
+            model: "NWB2200"
+        },
+        {
+            brand: "Baudouin",
+            power: 2500,
+            model: "NWB2500"
+        }
+   ];
+
+   const owlCarouselNodes = [
+     document.querySelector("#owl-carousel-1"),
+     document.querySelector("#owl-carousel-2"),
+     document.querySelector("#owl-carousel-3"),
+     document.querySelector("#owl-carousel-4"),
+     document.querySelector("#owl-carousel-5")
+   ];
+
+   // product card elements
+   function createCard () {
+     // create card elements
+     const card = document.createElement("div");
+     card.classList.add("card", "shadow");
+
+     const cardImg = document.createElement("img");
+     cardImg.classList.add("card-img-top");
+
+     const cardBody = document.createElement("div");
+     cardBody.classList.add("card-body");
+
+     const cardTitle = document.createElement("h5");
+     cardTitle.classList.add("card-title");
+
+     const cardProdNo = document.createElement("span");
+     cardProdNo.classList.add("prod-no");
+
+     const listGroup = document.createElement("div");
+     listGroup.classList.add("list-group");
+
+     const listItem = document.createElement("p");
+     listItem.classList.add("list-item");
+
+     // append elements to card
+     cardBody.append(cardTitle);
+     cardTitle.append(document.createElement("br"), cardProdNo);
+     listGroup.append(listItem);
+     card.append(cardImg, cardBody, listGroup);
+
+     return card;
+   }
+
+   for(var i = 0; i < productList.length; i++){
+     var productCard = createCard();
+     var productListSize = Object.keys(productList[i]).length;
+
+     // select card elements
+     var cardTitle = productCard.querySelector(".card-title");
+     var cardProdNo = productCard.querySelector(".prod-no");
+     var listItem = productCard.querySelector(".list-item");
+     var img = productCard.querySelector(".card-img-top");
+
+     // product properties
+     var brand = productList[i].brand;
+     var model = productList[i].model;
+     var power = productList[i].power;
+
+     // assign img src
+     if(brand == "Baudouin") img.src = "assets/img/products/baudouin.jpg";
+     if(brand == "John Deere") img.src = "assets/img/products/john-deer.jpg";
+     if(brand == "Mitsubishi") img.src = "assets/img/products/mitsubishi.png";
+     if(brand == "Volvo") img.src = "assets/img/products/volvo.png";
+     if(brand == "Grupel-Grupel") img.src = "assets/img/products/grupel.jpg";
+
+
+     // append card elements as children in the ".card" element
+     cardTitle.insertAdjacentText("afterbegin", brand);
+     cardProdNo.append(model);
+     listItem.append(power + " kVA");
+
+     // insert cards into rows relevant to the product power property
+     var power = productList[i].power;
+
+     switch (true) {
+         case power <= 75:
+         owlCarouselNodes[0].append(productCard);
+         break;
+
+         case power > 75 && power <= 375:
+         owlCarouselNodes[1].append(productCard);
+         break;
+
+         case power > 375 && power <= 1000:
+         owlCarouselNodes[2].append(productCard);
+         break;
+
+         case power > 1000:
+         owlCarouselNodes[3].append(productCard);
+         break;
+
+       default:
+       console.log("done")
+     }
+
+   }
+
+   $(".owl-carousel").owlCarousel({
+     loop: true,
+     items: 4,
+     nav: true,
+     dots: true,
+     responsiveClass: true,
+     responsive:{
+       0:{
+           items:2,
+           nav:false,
+           loop:true,
+           margin: 10
+       },
+       600:{
+           items:3,
+           nav:false,
+           loop:false,
+           margin: 10
+       },
+       1000:{
+           items:4,
+           nav:true,
+           loop:false,
+           dots: true,
+       }
+   }
+   });
+
+   /**
+    * Create categories
+    */
+
+   const owlNavNodes = [
+     document.querySelector("#owl-carousel-1 .owl-nav"),
+     document.querySelector("#owl-carousel-2 .owl-nav"),
+     document.querySelector("#owl-carousel-3 .owl-nav"),
+     document.querySelector("#owl-carousel-4 .owl-nav"),
+     document.querySelector("#owl-carousel-5 .owl-nav")
+   ];
+   const categories = ["20 - 75", "75.1 - 375", "375.1 - 1000", "Above 1000.1"]
+
+   for (var i = 0; i < owlNavNodes.length; i++) {
+     const header = document.createElement("h3");
+     header.append(categories[i] + " kVA");
+
+     owlNavNodes[i].prepend(header);
+
+
+     if(i == 3) break;
+   }
 
 })()
