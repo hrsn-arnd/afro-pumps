@@ -754,7 +754,6 @@ section {
 
 .about .image-left .overlay {
   background: RGB(3, 4, 94, 0.8);
-  /* background: RGB(2, 62, 138, 0.8); */
   width: 100%;
   height: 100%;
   position: absolute;
@@ -774,6 +773,11 @@ section {
         padding: 2rem 0;
     }
 }
+@media (min-width: 1140px) {
+    .about .content-container {
+        margin: 0 auto 0 60px;
+    }
+}
 
 /*--------------------------------------------------------------
 # Team
@@ -790,44 +794,26 @@ section {
   border-radius: 4px;
   background: #fff;
   box-shadow: 0px 2px 15px rgba(16, 110, 234, 0.15);
+  width: 100%;
 }
 
 .team .member .member-img {
   position: relative;
   overflow: hidden;
-  max-height: 250px;
+  max-height: 200px;
 }
 
-.team .member .social {
-  position: absolute;
-  left: 0;
-  bottom: 30px;
-  right: 0;
-  opacity: 0;
-  transition: ease-in-out 0.3s;
-  text-align: center;
+.about .team .member-img img {
+    width: auto;
+    /* height: 250px; */
 }
 
-.team .member .social a {
-  transition: color 0.3s;
-  color: #222222;
-  margin: 0 3px;
-  padding-top: 7px;
-  border-radius: 4px;
-  width: 36px;
-  height: 36px;
-  background: rgba(16, 110, 234, 0.8);
-  display: inline-block;
-  transition: ease-in-out 0.3s;
-  color: #fff;
-}
-
-.team .member .social a:hover {
-  background: #3b8af2;
-}
-
-.team .member .social i {
-  font-size: 18px;
+.team .member .member-img .overlay {
+    position:absolute;
+    background: linear-gradient(244deg,rgba(0,0,0,0.2),rgba(180,26,26,0.25) 20%,#03045E 76%,#03045E);
+    width:100%;
+    height:100%;
+    opacity:0.3;
 }
 
 .team .member .member-info {
@@ -838,8 +824,15 @@ section {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 18px;
-  color: #222222;
+  color: #03045E;
 }
+
+.team .member .member-info hr {
+    width: 25%;
+    border: 2px solid red;
+    opacity: 1;
+}
+
 
 .team .member .member-info span {
   display: block;
@@ -1126,14 +1119,14 @@ section {
   margin-bottom: 20px;
 }
 
-.contact .php-email-form input, .contact .php-email-form textarea {
+.contact .php-email-form input, .contact .php-email-form textarea, .contact .php-email-form select{
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
   border: 0;
 }
 
-.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+.contact .php-email-form input:focus, .contact .php-email-form textarea:focus, .contact .php-email-form textarea:focus{
   border-color: #106eea;
 }
 
@@ -1141,6 +1134,13 @@ section {
   padding: 10px 15px;
   border: 1px solid #f4f4f4;
   border-radius: 3px;
+}
+
+.contact .php-email-form select {
+  padding: 10px 15px;
+  border: 1px solid #f4f4f4;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
 .contact .php-email-form textarea {

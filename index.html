@@ -147,7 +147,7 @@
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about d-flex">
-      <div class="container col-lg-5 pt-5" data-aos="fade-up">
+      <div class="container content-container col-lg-5 pt-5" data-aos="fade-up">
 
         <div class="section-title">
           <h2>About</h2>
@@ -178,52 +178,106 @@
 
       <div id="team" class="container position-absolute team" data-aos="fade-up">
 
-        <div class="row justify-content-center">
+        <div class="row">
 
-          <div class="col-11 col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-11 col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                  <div class="overlay">
+
+                  </div>
+                <img src="assets/img/team/color/valery.jpeg" class="img-fluid" alt="">
               </div>
               <div class="member-info">
-                <h4>Valery Mwanza</h4>
                 <span>Founder</span>
+                <hr>
+                <h4>Valery <br> Mwanza</h4>
               </div>
             </div>
           </div>
 
-          <div class="col-11 col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-11 col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                  <div class="overlay">
+
+                  </div>
+                <img src="assets/img/team/color/marc.jpeg" class="img-fluid" alt="">
               </div>
               <div class="member-info">
-                <h4>Eloi Oyo</h4>
                 <span>Sales person</span>
+                <hr>
+                <h4>Marc<br> Masonga</h4>
+                <span>Lubumbashi DRC</span>
               </div>
             </div>
           </div>
 
-          <div class="col-11 col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-11 col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                  <div class="overlay">
+
+                  </div>
+                <img src="assets/img/team/color/eloi.jpeg" class="img-fluid" alt="">
               </div>
               <div class="member-info">
-                <h4>Jean Kolombo</h4>
-                <span>Sales</span>
+                <span>Sales person</span>
+                <hr>
+                <h4>Eloi <br> Oyo</h4>
+                <span>Staint Pointe Noire</span>
               </div>
             </div>
           </div>
 
-          <div class="col-11 col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+
+          <div class="col-11 col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                  <div class="overlay">
+
+                  </div>
+                <img src="assets/img/team/color/jean.jpeg" class="img-fluid" alt="">
               </div>
               <div class="member-info">
-                <h4>Marc Masonga</h4>
-                <span>Sales</span>
+                <span>Sales person</span>
+                <hr>
+                <h4>Jean <br> Kolombo</h4>
+                <span>Mbuji Mayi, DRC</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-11 col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
+              <div class="member">
+                  <div class="member-img">
+                      <div class="overlay">
+
+                      </div>
+                      <img src="assets/img/team/color/remy.jpeg" class="img-fluid" alt="">
+                  </div>
+                  <div class="member-info">
+                      <span>Sales person</span>
+                      <hr>
+                      <h4>Remy <br> Sazumba</h4>
+                      <span>Unknown location</span>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-11 col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="600">
+            <div class="member">
+              <div class="member-img">
+                  <div class="overlay">
+
+                  </div>
+                <img src="assets/img/team/color/tshilombo.jpeg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <span>Sales person</span>
+                <hr>
+                <h4>Tshilombo Edmond</h4>
+                <span>Unknown location</span>
               </div>
             </div>
           </div>
@@ -306,8 +360,23 @@
                   <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
                 </div>
               </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              <div class="row">
+                  <div class="col form-group">
+                      <div class="form-group d-flex">
+                          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                      </div>
+                  </div>
+                  <div class="col form-group">
+                      <select class="form-control" name="source" id="subject" style="color: #6c757d">
+                          <option disabled selected hidden>Who referred you to us?</option>
+                          <option>Marc Masonga</option>
+                          <option>Eloi Oyo</option>
+                          <option>Jean Kolombo</option>
+                          <option>Remy Sazumba</option>
+                          <option>Tshilombo Edmond</option>
+                          <option>Other</option>
+                      </select>
+                  </div>
               </div>
               <div class="form-group">
                 <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
