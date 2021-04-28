@@ -1143,6 +1143,10 @@ section {
   cursor: pointer;
 }
 
+#source-other {
+    display: none;
+}
+
 .contact .php-email-form textarea {
   padding: 12px 15px;
   border: 1px solid #f4f4f4;

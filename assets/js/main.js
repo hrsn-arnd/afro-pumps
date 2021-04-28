@@ -99,7 +99,7 @@
   }
 
   /**
-   * Back to top button 
+   * Back to top button
    */
   let backtotop = select('.back-to-top')
   if (backtotop) {
@@ -767,5 +767,18 @@
 
      if(i == 3) break;
    }
+
+   const source = document.querySelector("#source");
+   const otherSource = document.querySelector('#source-other');
+   const otherSourceInput = document.querySelector('input[name="source-other"]');
+
+   source.addEventListener('change', function(event){
+       if (event.target.value == 'Other'){
+           otherSource.classList.add("d-block");
+           otherSourceInput.focus();
+       }else {
+           otherSource.classList.remove("d-block");
+       }
+   });
 
 })()
